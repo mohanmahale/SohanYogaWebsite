@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A182122-DBBE-4E83-996E-3420CB615D98}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SohanYogaWebsite</RootNamespace>
+    <AssemblyName>SohanYogaWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap.css" />
+    <Content Include="images\slider\01.jpg" />
+    <Content Include="images\slider\02.jpg" />
+    <Content Include="images\slider\03.jpg" />
+    <Content Include="images\slider\3.jpg" />
+    <Content Include="images\slider\4.png" />
+    <Content Include="images\slider\5.jpg" />
+    <Content Include="images\slider\6.jpg" />
+    <Content Include="images\slider\7.jpg" />
+    <Content Include="images\slider\8.jpeg" />
+    <Content Include="images\FeaturedProgram\Auxiliary Workshop.jpg" />
+    <Content Include="images\FeaturedProgram\Ayurveda.jpg" />
+    <Content Include="images\FeaturedProgram\Detox and Weight Loss Classe.png" />
+    <Content Include="images\FeaturedProgram\MaternalYoga.jpg" />
+    <Content Include="images\FeaturedProgram\One month coach upgrade class.jpg" />
+    <Content Include="images\FeaturedProgram\OneMonthCoaching.jpg" />
+    <Content Include="images\FeaturedProgram\OneMonthJuniorCoaching.jpg" />
+    <Content Include="images\FeaturedProgram\OnetoOneCustom.jpg" />
+    <Content Include="images\FeaturedProgram\Outdoorpublic.jpg" />
+    <Content Include="images\FeaturedProgram\ParentYoga.jpg" />
+    <Content Include="images\FeaturedProgram\Physiotherapy Open Class.png" />
+    <Content Include="images\FeaturedProgram\TreeMonthZeroFoundation.jpg" />
+    <Content Include="images\FeaturedProgram\TwoMonthSeniorCoaching.jpg" />
+    <Content Include="images\FeaturedProgram\Yogahysiotherapy Course.jpg" />
+    <Content Include="images\logo-image.jpg" />
+    <Content Include="images\team\F-1.jpg" />
+    <Content Include="images\team\F-2.png" />
+    <Content Include="images\team\F-3.jpg" />
+    <Content Include="images\Yoga_Images\1.jpg" />
+    <Content Include="images\Yoga_Images\2.jpg" />
+    <Content Include="images\Yoga_Images\3.jpg" />
+    <Content Include="images\Yoga_Images\4.png" />
+    <Content Include="images\Yoga_Images\5.jpg" />
+    <Content Include="images\Yoga_Images\6.jpg" />
+    <Content Include="images\Yoga_Images\7.jpg" />
+    <Content Include="images\Yoga_Images\8.jpeg" />
+    <Content Include="images\Yoga_Images\buddha-753016_960_720.jpg" />
+    <Content Include="images\Yoga_Images\frogs-2403525_960_720.jpg" />
+    <Content Include="images\Yoga_Images\girl-1665173__340.jpg" />
+    <Content Include="images\Yoga_Images\lots-of-yoga-poses.jpeg" />
+    <Content Include="images\Yoga_Images\mandala.png" />
+    <Content Include="images\Yoga_Images\meditating-1894762_960_720.jpg" />
+    <Content Include="images\Yoga_Images\meditation-1.jpg" />
+    <Content Include="images\Yoga_Images\om-1769642_960_720.png" />
+    <Content Include="images\Yoga_Images\pexels-photo-102623 %281%29.jpeg" />
+    <Content Include="images\Yoga_Images\pexels-photo-102623.jpeg" />
+    <Content Include="images\Yoga_Images\pexels-photo-374633.jpeg" />
+    <Content Include="images\Yoga_Images\Schermafbeelding-2016-09-27-om-16.44.33-2-e1475692298753.png" />
+    <Content Include="images\Yoga_Images\spirituality-1.jpg" />
+    <Content Include="images\Yoga_Images\sport-1087028_960_720.jpg" />
+    <Content Include="images\Yoga_Images\Varieties-of-Hatha-yoga.png" />
+    <Content Include="images\Yoga_Images\yoga-1434787_960_720.jpg" />
+    <Content Include="images\Yoga_Images\yoga-1568023__340.jpg" />
+    <Content Include="images\Yoga_Images\yoga-1812695__340.jpg" />
+    <Content Include="images\Yoga_Images\yoga-2392635_960_720.jpg" />
+    <Content Include="images\Yoga_Images\yoga-2393201_960_720.jpg" />
+    <Content Include="images\Yoga_Images\yoga-2393202_960_720.jpg" />
+    <Content Include="images\Yoga_Images\yoga-544970_960_720.jpg" />
+    <Content Include="images\yoga-1.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\jquery.1.11.1.js" />
+    <Content Include="js\Site.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\presets\preset1.css" />
+    <Content Include="css\presets\preset2.css" />
+    <Content Include="css\presets\preset3.css" />
+    <Content Include="css\presets\preset4.css" />
+    <Content Include="css\presets\preset5.css" />
+    <Content Include="css\presets\preset6.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\Site.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\02.jpg" />
+    <Content Include="images\05.jpg" />
+    <Content Include="images\about-bg.jpg" />
+    <Content Include="images\blog\1.jpg" />
+    <Content Include="images\blog\2.jpg" />
+    <Content Include="images\blog\3.jpg" />
+    <Content Include="images\contact-bg.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\features-bg.jpg" />
+    <Content Include="images\lightbox\close.png" />
+    <Content Include="images\lightbox\loading.gif" />
+    <Content Include="images\lightbox\next.png" />
+    <Content Include="images\lightbox\prev.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\portfolio\1.jpg" />
+    <Content Include="images\portfolio\2.jpg" />
+    <Content Include="images\portfolio\3.jpg" />
+    <Content Include="images\portfolio\4.jpg" />
+    <Content Include="images\portfolio\5.jpg" />
+    <Content Include="images\portfolio\6.jpg" />
+    <Content Include="images\portfolio\7.jpg" />
+    <Content Include="images\portfolio\8.jpg" />
+    <Content Include="images\portfolio\portfolio-details.jpg" />
+    <Content Include="images\team\1.jpg" />
+    <Content Include="images\team\2.jpg" />
+    <Content Include="images\team\3.jpg" />
+    <Content Include="images\team\4.jpg" />
+    <Content Include="images\twitter-bg.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\jquery.countTo.js" />
+    <Content Include="js\jquery.inview.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\lightbox.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\mousescroll.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\smoothscroll.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60789</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60789/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
