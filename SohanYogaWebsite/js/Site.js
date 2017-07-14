@@ -9,6 +9,7 @@
         }, 1000);
         e.preventDefault();
     });
+
 });
 
 $(document).ready(function() {
