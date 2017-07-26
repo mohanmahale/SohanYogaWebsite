@@ -48,7 +48,9 @@ body {
 .top li a:hover {text-decoration: none;}
 .top li a:hover,.top li a:hover i {color: #005FA6;transition-property: all;transition-duration: 0.3s;transition-timing-function: linear;}
 /*footer*/
-footer {
+/*ooter {
+   
+
     height: 50px;
     background: black;
     color: white;
@@ -56,7 +58,9 @@ footer {
 .footer-social li {
     display: inline-block;
     margin-left: 20px;
-}
+}*/
+footer{ background-color: #000;}
+
 /* Navigation and menu*/
 .link-1:hover {
   border-top: 2px solid #45aed6;
@@ -80,7 +84,7 @@ nav img {
 
 /*Section*/
 section {
-     /*margin-top: 50px;*/
+     margin-top: 50px;
      min-height:100vh;
 }
 .section-header {
@@ -638,7 +642,7 @@ ol.type li a.active { font-weight: 700; }
 .course-description{ padding-top: 100px;}
 .course img{ }
 .eventdetails-box{ border-right: 1px solid}
-.eventdetails{ padding-top: 100px;}
+.eventdetails{ padding-top: 50px;}
 .eventdetails h3{ text-align: center;}
 .eventdetails img{ padding-top: 20px;}
 .eventdetails-venue{ text-align: left;padding-top: 50px;}
@@ -664,3 +668,7 @@ margin-top : 5px;
 .cnt_info p {
 padding-left : 10px;
 }
+
+.dropdown:hover .dropdown-menu{ display: block;border: none;}
+
+
