@@ -112,6 +112,8 @@
     <Content Include="images\demoslider1.jpg" />
     <Content Include="images\demoslider2.jpg" />
     <Content Include="images\demoslider3.jpg" />
+    <Content Include="images\favicon1.png" />
+    <Content Include="images\favicon2.ico" />
     <Content Include="images\imageedit_1_5204808041.png" />
     <Content Include="images\imageedit_1_8712740268.png" />
     <Content Include="images\logo1.png" />
